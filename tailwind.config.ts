@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        "league": ["League Spartan", "system-ui"],
+        "montserrat": ["Montserrat Alternates", "system-ui"],
+        "alfa": ["Alfa Slab One", "system-ui"]
+      }
     },
   },
   plugins: [],
