@@ -61,7 +61,7 @@ const Navbar = () => {
                 <button
                     onClick={handleNav}
                     className='block lg:hidden bg-[#86D7FF] rounded-xl pt-[1px] pr-[1px]'>
-                    {nav ? <UlifexIconNavbar size='60' color='FF6699' /> : <UlifexIconNavbar size='60' color='FF6699' />}
+                    <UlifexIconNavbar size='60' color='FF6699' />
                 </button>
             </div>
 
@@ -69,8 +69,8 @@ const Navbar = () => {
             <ul
                 ref={menuRef}
                 className={
-                    nav ? 'fixed lg:hidden right-0 top-0 h-full w-[40%] border-l border-l-gray-900 bg-[#FF6699] ease-in-out duration-500'
-                        : 'fixed top-0 bottom-0 right-[-50%] w-[40%] ease-in-out duration-500'
+                    nav ? 'fixed lg:hidden right-0 top-0 h-full w-[40%] border-l border-l-gray-900 bg-[#FF6699] ease-in-out duration-500 z-20'
+                        : 'fixed top-0 bottom-0 right-[-50%] w-[40%] ease-in-out duration-500 z-20'
                 }
             >
                 {/*Mobile logo*/}
